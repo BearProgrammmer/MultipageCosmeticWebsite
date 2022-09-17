@@ -23,7 +23,9 @@
 html {
   scroll-behavior: smooth;
 }
-
+body .logo{
+  font-size: 30px;
+}
 body {
   font-family: "Poppins", sans-serif;
   color: var(--color-dark);
@@ -112,7 +114,7 @@ section {
   padding: 12rem 0 0;
 }
 
-/* ==================== NAVBAR ===================== */
+/* **************** NAVBAR ***************** */
 nav {
   width: 100vw;
   height: 5rem;
@@ -162,9 +164,9 @@ nav .icons {
   font-size: 1.2rem;
 }
 
-/* ====================== HEADER ======================= */
+/* ****************** HEADER ******************* */
 header {
-  background: url("./images/header\ vector.png") no-repeat center center/cover;
+  background: url("images/header vector.png") no-repeat center center/cover;
   height: 100vh;
   max-width: 100vw;
   position: relative;
@@ -228,7 +230,7 @@ header .container .info .cta a:last-child:hover img {
   filter: saturate(0);
 }
 
-/* ============================ COMMERCIALS ======================= */
+/* *************** COMMERCIALS ********************* */
 section#commercial {
   background: var(--color-primary-variant);
   width: 100vw;
@@ -238,7 +240,6 @@ section#commercial {
   left: 0;
   z-index: 10;
   padding: 0;
-  display: grid;
   place-items: center;
   display: none;
 }
@@ -252,9 +253,9 @@ section#commercial .container video {
   width: 100%;
 }
 
-/* ============================= PRODUCTS ============================= */
+/* **************** PRODUCTS ************** */
 section#products .container {
-  width: 56%;
+  width: 40%;
 }
 
 section#products .container > h2,
@@ -285,7 +286,7 @@ section#products a:hover {
   text-decoration: underline;
 }
 
-/* ====================== WHY CHOOSE US ==================== */
+/* ****************** WHY CHOOSE US ************** */
 section#why-choose-us .container .head {
   display: flex;
   justify-content: space-between;
@@ -303,6 +304,9 @@ section#why-choose-us .container .head .right {
 
 section#why-choose-us .container .head .right .image {
   width: 8rem;
+}
+section#why-choose-us .image{
+  padding-left: 50px;
 }
 
 section#why-choose-us .container .head .right h4 {
@@ -343,7 +347,7 @@ section#why-choose-us .container article a:hover img {
   filter: saturate(0);
 }
 
-/* =================== TRUSTED CLIENTS ================= */
+/* ************* TRUSTED CLIENTS ************* */
 section#trusted-clients h4 {
   text-align: center;
   font-size: 1rem;
@@ -358,7 +362,7 @@ section#trusted-clients .clients {
   margin-top: 4rem;
 }
 
-/* =================== TESTIMONIALS ================= */
+/* ************* TESTIMONIALS ********************* */
 .swiper {
   width: var(--width);
   height: 100%;
@@ -401,7 +405,7 @@ section#trusted-clients .clients {
   background: var(--color-primary);
 }
 
-/* ========================== FAQS =========================== */
+/* **************** FAQS ****************** */
 section#faqs h2 {
   text-align: center;
   margin-bottom: 5rem;
@@ -451,7 +455,7 @@ section#faqs a.btn {
   margin-top: 1.6rem;
 }
 
-/* =============================== CTA ============================== */
+/* ****************** CTA ********************** */
 section#cta .container {
   background: var(--color-primary);
   display: flex;
@@ -486,7 +490,7 @@ section#cta .container .btn {
   align-self: flex-end;
 }
 
-/* ======================= FOOTER ======================== */
+/* ****************** FOOTER ******************** */
 footer {
   background: var(--color-primary);
   margin-top: 8rem;
@@ -578,8 +582,29 @@ footer .copyright {
   color: var(--color-white);
   border-top: 1px solid var(--color-light);
 }
+/* *************** MEDIA QUERIES (MOBILE BUG) ******************* */
+@media screen and (min-width: 1616px) {
+  header {
+    max-width: 100vw;
+    margin-left: 600px;
+  }
 
-/* ==================== MEDIA QUERIES (TABLETS) ===================== */
+@media screen and (min-width: 2000px) {
+  header {
+    max-width: 60vw;
+    margin-left: 600px;
+  }
+
+}
+@media screen and (min-width: 1500px) {
+  section#why-choose-us .image{
+    max-width: 35vw;
+  }
+}
+
+
+  }
+/* **************** MEDIA QUERIES (TABLETS) ***************** */
 @media screen and (max-width: 1024px) {
   h1 {
     font-size: 4.4rem;
@@ -616,7 +641,7 @@ footer .copyright {
     overflow-x: hidden;
   }
 
-  /* =================== NAVBAR ===================== */
+  /* ***************** NAVBAR ***************** */
   nav .container {
     width: 100%;
   }
@@ -666,7 +691,7 @@ footer .copyright {
     display: none;
   }
 
-  /* ================== HEADER ================== */
+  /* ************** HEADER ************** */
   header {
     top: 7rem;
     height: 100%;
@@ -682,12 +707,12 @@ footer .copyright {
     display: none;
   }
 
-  /* ================== PRODUCTS ================== */
+  /* ************** PRODUCTS ************* */
   section#products .container {
     width: var(--mobile-width);
   }
 
-  /* ================== FAQs ================== */
+  /* **************** FAQs *************** */
   section#faqs h2 {
     margin-bottom: 3rem;
   }
@@ -700,7 +725,7 @@ footer .copyright {
     padding: 1.5rem;
   }
 
-  /* ================== CTA ================== */
+  /* ***************** CTA ***************** */
   section#cta .container {
     padding: 4rem 2rem;
   }
@@ -724,7 +749,7 @@ footer .copyright {
   }
 }
 
-/* ====================== MEDIA QUERIES (MOBILE PHONES ======================== */
+/* ****************** MEDIA QUERIES (MOBILE PHONES) ************* */
 @media screen and (max-width: 600px) {
   h1 {
     font-size: 3.4rem;
@@ -754,12 +779,12 @@ footer .copyright {
     padding-top: 8rem;
   }
 
-  /* ==================== NAVBAR ===================== */
+  /* ************** NAVBAR ******************** */
   nav .container .icons {
     gap: 1rem;
   }
 
-  /* ==================== HEADER ===================== */
+  /* ***************** HEADER **************** */
   header .container {
     grid-template-columns: 1fr;
     text-align: center;
@@ -775,7 +800,6 @@ footer .copyright {
 
   header .container .cta {
     flex-direction: column;
-    /* margin-top: 1.4rem; */
     gap: 1rem;
   }
 
@@ -785,12 +809,12 @@ footer .copyright {
     margin: 0 auto;
   }
 
-  /* ==================== COMMERCIAL ===================== */
+  /* ***************** COMMERCIAL ***************** */
   section#commercial .container {
     width: var(--mobile-width);
   }
 
-  /* ==================== PRODUCTS ===================== */
+  /* ****************** PRODUCTS ******************** */
   section#products {
     margin-top: 4rem;
   }
@@ -810,7 +834,7 @@ footer .copyright {
     padding-left: 5rem;
   }
 
-  /* ==================== WHY CHOOSE US ===================== */
+  /* ****************** WHY CHOOSE US ****************** */
   section#why-choose-us .container .head .right {
     display: none;
   }
@@ -821,18 +845,18 @@ footer .copyright {
     text-align: center;
   }
 
-  /* ==================== TRUSTED CLIENTS ===================== */
+  /* ***************** TRUSTED CLIENTS ************** */
   section#trusted-clients {
     display: none;
   }
 
-  /* ==================== TESTIMONIALS ===================== */
+  /* *************** TESTIMONIALS *************** */
   .swiper-slide {
     flex-direction: column;
     gap: 2rem;
   }
 
-  /* ==================== CTA ===================== */
+  /* *************** CTA ***************** */
   section#cta .container {
     flex-direction: column;
     height: fit-content;
@@ -857,7 +881,7 @@ footer .copyright {
     right: 30%;
   }
 
-  /* ==================== FOOTER ===================== */
+  /* ***************** FOOTER *************** */
   footer .container {
     grid-template-columns: 1fr;
     gap: 3rem;

@@ -4,27 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Multi-page Website Using HTML, CSS & JavaScript</title>
+    <title>Index</title>
 
-    <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@800&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
-    <!-- SWIPER JS CDN -->
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
 
-    <!-- ICONSCOUT CDN -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
 
-
-    <!-- STYLESHEET -->
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <nav>
         <div class="container">
-            <a href="index.html" class="logo"><img src="./images/logo.png"></a>
+            <a href="index.html" class="logo">Logo</a>
 
             <ul>
                 <li><a href="index.html" class="active">Home</a></li>
@@ -44,7 +39,7 @@
             <button id="close-btn"><i class="uil uil-multiply"></i></button>
         </div>
     </nav>
-    <!--========================= END OF NAVBAR ========================-->
+    <!--********************** END OF NAVBAR **************-->
 
 
 
@@ -74,7 +69,7 @@
             </div>
         </div>
     </header>
-    <!--========================= END OF HEADER =========================-->
+    <!--******************** END OF HEADER ******************************-->
 
 
 
@@ -86,7 +81,7 @@
             </video>
         </div>
     </section>
-    <!--======================== END OF COMMERCIAL ============================-->
+    <!--******************** END OF COMMERCIAL ******************-->
 
 
 
@@ -129,7 +124,7 @@
             </article>
         </div>
     </section>
-    <!--=============================== END OF PRODUCTS ============================-->
+    <!--******************** END OF PRODUCTS *******************-->
 
 
 
@@ -175,7 +170,7 @@
             </article>
         </div>
     </section>
-    <!--=============================== END OF WHY CHOOSE US ============================-->
+    <!--************************END OF WHY CHOOSE US *******************-->
 
 
 
@@ -194,7 +189,7 @@
             </div>
         </div>
     </section>
-    <!--=============================== END OF TRUSED CLIENTS ============================-->
+    <!--******************* END OF TRUSTED CLIENTS *******************-->
 
 
 
@@ -210,12 +205,10 @@
                   <h4>Customer Story</h4>
                   <h2>Quick and best results. You are the best!</h2>
                   <p>
-                    “If you are going to use a passage of Lorem Ipsum, you need to be
-                    sure there isn't anything embarrassing hidden in the middle of
-                    text.
+                    “We guarantee the result or your money back.
                   </p>
                   <p>
-                    There are many variations of passages of Lorem Ipsum available.”
+                    :)”
                   </p>
                   <h5>Mary Danso</h5>
                   <small>Marketing Manager</small>
@@ -264,7 +257,7 @@
         </div>
         <div class="swiper-pagination"></div>
     </section>
-    <!--============================= END OF TESTIMONIALS ==============================-->
+    <!--******************** END OF TESTIMONIALS *********************-->
 
 
 
@@ -334,7 +327,7 @@
             <a href="faqs.html" class="btn">Learn More</a>
         </div>
     </section>
-    <!--========================= END OF FAQS =========================-->
+    <!--***************** END OF FAQS ******************-->
 
 
 
@@ -352,7 +345,7 @@
             <a href="contact.html" class="btn">Let's talk</a>
         </div>
     </section>
-    <!--========================= END OF CTA =========================-->
+    <!--***************** END OF CTA ***********************-->
 
 
 
@@ -361,9 +354,6 @@
     <footer>
         <div class="container">
             <div class="f1">
-                <div class="logo">
-                    <img src="./images/logo.png">
-                </div>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam!</p>
                 <div class="subscribe">
                     <input type="email" placeholder="Enter Email">
@@ -395,7 +385,7 @@
                 <h4>Contact Us</h4>
                 <p>
                     +(233) 345 6789<br/>
-                    support@egattor.com
+                    email@servidor.com
                 </p>
                 <ul class="socials">
                     <li><a href="https://instagram/apple" target="_blank"><i class="uil uil-instagram-alt"></i></a></li>
@@ -405,18 +395,13 @@
             </div>
         </div>
 
-        <div class="copyright">
-            <small>Copyright &copy; EGATOR YouTube Tutorials</small>
-        </div>
     </footer>
 
-    <!-- SWIPER JS CDN -->
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="./main.js"></script>
 
     <script>
-        
-        // swiper js (testimonial section)
+
     const swiper = new Swiper('.swiper', {
         pagination: {
         el: '.swiper-pagination',
@@ -424,14 +409,14 @@
         },
     });
 
-        // open video
+        // Open video
         const showCommercialBtn = document.querySelector("#show-commercial-btn");
         const commercial = document.querySelector("#commercial");
         showCommercialBtn.addEventListener('click', () => {
             commercial.style.display = "grid";
         });
 
-        // close video
+        // Close video
         document.body.addEventListener('click', (e) => {
             if(e.target.id === "commercial") {
                 commercial.style.display = "none";

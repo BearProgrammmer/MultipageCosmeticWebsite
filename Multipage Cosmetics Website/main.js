@@ -1,18 +1,16 @@
-
-  // open & close nav menu
   const menuBtn = document.querySelector("#menu-btn");
   const closeBtn = document.querySelector("#close-btn");
   const menu = document.querySelector("nav .container ul");
 
 
-// open sidebar
+// Open sidebar
 menuBtn.addEventListener('click', () => {
   menu.style.display = 'block';
   menuBtn.style.display = 'none';
   closeBtn.style.display = 'inline-block';
 })
 
-// close sidebar
+// Close sidebar
 closeBtn.addEventListener('click', () => {
   menu.style.display = 'none';
   closeBtn.style.display = 'none';
@@ -20,11 +18,11 @@ closeBtn.addEventListener('click', () => {
 })
 
 
-// change active class to clicked nav item
+// Change active to clicked
 const navItems = document.querySelectorAll('nav ul li');
 
 
-// remove active class from other items
+// Remove active class
 const removeActiveClass = () => {
   navItems.forEach(item => {
     const link = item.querySelector('a');
@@ -32,7 +30,7 @@ const removeActiveClass = () => {
   })
 }
 
-// add active class to clicked nav item
+// Active class clicked
 navItems.forEach(item => {
   const link = item.querySelector('a');
   link.addEventListener('click', () => {
@@ -41,14 +39,14 @@ navItems.forEach(item => {
   })
 })
 
-// show/hide faqs
+// Show and hide faqs
 const faqs = document.querySelectorAll('section#faqs article');
 
 faqs.forEach(faq => {
   faq.addEventListener('click', () => {
     faq.classList.toggle('open');
 
-    // change icon
+    // Menu Icon
     const icon = faq.querySelector('.icon i');
     if(icon.className === 'uil uil-plus') {
       icon.className = 'uil uil-minus';
@@ -58,8 +56,6 @@ faqs.forEach(faq => {
   })
 })
 
-
-// change navbar style on scroll
 window.addEventListener("scroll", () => {
   document.querySelector('nav').classList.toggle('window-scroll', window.scrollY > 0)
 })
